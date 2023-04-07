@@ -1,0 +1,11 @@
+{
+  "name": "jokes-using-api",
+  "version": "1.0.0",
+  "description": "Random Joke Using API",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rahul Raj Mehra",
+  "license": "ISC"
+}
