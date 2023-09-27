@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* Box sizing rules */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    /* Set core body defaults */
+    body {
+      min-height: 100vh;
+      text-rendering: optimizeSpeed;
+      line-height: 1;
+    }
+
+    #todo-form {
+      margin-bottom: 2rem;
+    }
+
+    #todo-form input {
+      padding: 1rem;
+      margin-left: 0.5rem;
+      min-width: 16rem;
+    }
+
+    #todo-form button {
+      padding: 1rem;
+      min-width: 8rem;
+      background-color: salmon;
+      color: white;
+    }
+
+    #todo-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #todo-list div {
+      min-width: 10rem;
+      width: auto;
+      padding: 1rem;
+      margin: 0.5rem;
+      border: 1px solid #333;
+      cursor: pointer;
+    }
+
+    #todo-list div.done {
+      background-color: gray;
+      color: white;
+    }
+  </style>
+  </head>
+  <body>
+    <header>
+      <h1>Fetch API and async await</h1>
+      <h2>Typicode Todos</h2>
+      <p>
+        Simple Todo app using
+        <a href="https://jsonplaceholder.typicode.com/" target="_blank"
+          >Typicode Todos</a
+        >
+        with Fetch API
+      </p>
+    </header>
+    <main>
+      <form id="todo-form">
+        <input id="todo-input" type="text" placeholder="Add Todo items.." />
+        <button type="submit">Add</button>
+      </form>
+
+      <div id="todo-list"></div>
+    </main>
+
+    <script src="index.js"></script>
+    <!-- <script src="demo.js"></script> -->
+  </body>
+</html>
